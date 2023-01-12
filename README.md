@@ -64,7 +64,7 @@ In the terminal, enter:
 
     python3 -m http.server
 
-Select Open Browser.  Input various numbers (e.g. 8, 9994, 500000 and 1000000) and check if the result matches the user story.  If it does not, then check typing.
+Select Open Preview.  Input various numbers (e.g. 8, 9994, 500000 and 1000000) and check if the result matches the user story.  If it does not, then check typing.
 
 ## Deployment
 
