@@ -43,3 +43,8 @@ As a user, if I enter 500000 and submit, I expect `orderedFractions(500000)` to 
 As a user, if I enter 1000000 and submit, I expect `orderedFractions(1000000)` to return 428570.
 
 User Stories on function `orderedFractions(limit)` taken from [FreeCodeCamp - Coding Interview Prep - Project Euler 071](https://www.freecodecamp.org/learn/coding-interview-prep/project-euler/problem-71-ordered-fractions)
+
+**Information Architecture**
+
+The function `orderedFractions(limit)` returns a number, where `limit` is a number between 3 and 1000000.
+
