@@ -48,3 +48,21 @@ User Stories on function `orderedFractions(limit)` taken from [FreeCodeCamp - Co
 
 The function `orderedFractions(limit)` returns a number, where `limit` is a number between 3 and 1000000.
 
+## Features
+
+Allows the user to enter a number in order to get the numerator of the fraction to the left of 3/7 from a list of reduced proper fractions.  Performs checks on valid user input.  If the input is not valid, an error message is displayed instead.
+
+## Technologies
+
+Uses HTML5, CSS3, JavaScript, Bootstrap 5.3.0-alpha1 and Google Fonts.
+
+## Testing
+
+Ensure all user stories have been met.
+
+In the terminal, enter:
+
+    python3 -m http.server
+
+Select Open Browser.  Input various numbers (e.g. 8, 9994, 500000 and 1000000) and check if the result matches the user story.  If it does not, then check typing.
+
