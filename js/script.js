@@ -5,7 +5,7 @@ function getNumberInfo() {
     // Get the Value of the Input Field
     let num = document.getElementById("mynumber").value;
     // Check if input is valid
-    if (isNaN(num) || num.length==0 || num<3 || num>1000000 || (num.length>1 && num[0]=="0") || !Number.isInteger(Number(num))) {
+    if (isNaN(num) || num.length == 0 || num < 3 || num > 1000000 || (num.length > 1 && num[0] == "0") || !Number.isInteger(Number(num))) {
         txt += `Invalid Input.  Please enter a whole number between 3 and 1000000.  Do not include leading zeros.`;
     } else {
         txt += `You have entered the number ${num}.<p>`;
@@ -27,18 +27,18 @@ function getNumberInfo() {
 function orderedFractions(limit) {
     const fractions = [];
     const fractionValues = {};
-    const highBoundary = 3/7;
-    let lowBoundary = 2/7;
-    for (let denominator=limit;denominator>2;denominator--) {
-        let numerator = Math.floor((3*denominator-1)/7);
-        let value = numerator/denominator;
-        if (value > highBoundary || value< lowBoundary) continue;
-        fractionValues[value] = [numerator,denominator];
+    const highBoundary = 3 / 7;
+    let lowBoundary = 2 / 7;
+    for (let denominator = limit; denominator > 2; denominator--) {
+        let numerator = Math.floor((3 * denominator - 1) / 7);
+        let value = numerator / denominator;
+        if (value > highBoundary || value < lowBoundary) continue;
+        fractionValues[value] = [numerator, denominator];
         fractions.push(value);
         lowBoundary = value;
     }
     fractions.sort();
-    return fractionValues[fractions[fractions.length-1]][0];
+    return fractionValues[fractions[fractions.length - 1]][0];
 }
 
 // Function to Clear Information
